@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+<div class="container">
+hello world!!
+</div>
+
+    <div class="container">
+        Some people: {{ somelink  | default ('No People')}}
+    </div>
+
+    Hello! {{ getName | default("No") }}
+
+{% endblock %}
+
+{% block title %} Hello {% endblock %}
