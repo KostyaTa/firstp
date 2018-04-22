@@ -16,11 +16,13 @@
                 <a class="flex-sm-fill text-sm-center nav-link active" href="/">Home</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('foo') }}">Foo</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('hello_page') }}">Hello</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('form') }}">Form</a>
                 <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
             </nav>
         </div>
 
     </heder>
+    {% include 'flash_messages.html.twig' %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
